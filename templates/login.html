@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 {% extends "index.html" %}
 {% block content %}
-
-<h2>Please Login</h2>
-<br>
+<div class="col-sm-4 col-sm-offset-2">
+  <h2>Please Login:</h2><br>
+</div>
+<div class="col-sm-12">
 <form class="form-horizontal" action="" method="post">
   <div class="form-group">
     <label for="username" class="col-sm-2 col-sm-offset-2 control-label">Username</label>
@@ -32,5 +33,5 @@
     </div>
   </div>
 </form>
-
+</div>
 {% endblock %}

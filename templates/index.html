@@ -5,45 +5,18 @@
     <title>Ruca Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription" content="{{ description }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles/main.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-        <a class="navbar-brand" href="/">Ruca Consulting</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/projects">Past Projects</a></li>
-        <li><a href="/about">About Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="/login">Log in</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Log out</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-    <div class="container">
-      <!-- Child Template -->
-      {% block content %}{% endblock %}
+    <!-- Navigation Template -->
+    {% include "navigation.html" %}
+    <!-- Child Template -->
+    {% block content %}{% endblock %}
+    {% include "home.html" %}
+    {% include "about.html" %}
+    {% include "projects.html" %}
+    {% include "footer.html" %}
       <!-- Errors -->
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}</p>
@@ -52,8 +25,9 @@
       {% for message in get_flashed_messages() %}
         {{message}}
       {% endfor %}
-    </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="/static/js/app.js"></script>
   </body>
 </html>

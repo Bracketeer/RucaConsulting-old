@@ -19,6 +19,10 @@ def login_required(f):
 def home():
     return render_template('index.html')
 
+@app.route('/scroll')
+def scroll():
+    return render_template('index.html')
+
 @app.route('/admin')
 @login_required
 def admin():
