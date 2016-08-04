@@ -1,6 +1,8 @@
 body{
   width: 100%;
   font-family: 'Quicksand', sans-serif;
+  background: rgba(54, 54, 54, 1);
+  color: #fff;
 }
 h1{
   color: #fff;
@@ -43,7 +45,7 @@ p{
 .navbar-nav>li {
   margin-right: 5px;
   text-transform: uppercase;
-  /*background: rgba(54, 54, 54, 1);*/
+
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
   -o-transition: background-color .5s ease-out;
@@ -54,6 +56,9 @@ p{
   font-size: 20px;
   padding-top: 33px;
   padding-bottom: 32px;
+}
+.navbar-nav{
+  background: rgba(54, 54, 54, 1);
 }
 .active{
   background: #3f8e7f;
@@ -76,15 +81,10 @@ p{
   padding-top:22px;
 }
 /*Home*/
-#home{
-  background: url('/static/images/background4.jpg') no-repeat;
-  /*position: fixed;*/
-  background-size: cover;
-  height: 100%;
-}
+
 .jumbotron{
   background: rgba(54, 54, 54, 0);
-  margin-top: 115px;
+  margin-top: 105px;
   padding: 20px;
   -webkit-backdrop-filter: blur(10px);
 }
@@ -110,7 +110,7 @@ p{
   color: #fff;
 }
 /*Services*/
-.services{
+.header{
   padding: 30px;
   width: 100%;
   background: rgba(54, 54, 54, 1);
@@ -126,13 +126,28 @@ p{
 .service-text{
   text-align: center;
 }
+#home{
+  background: url('/static/images/background4.jpg') no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #services{
   background: rgba(54, 54, 54, 1);
-  background-size: cover;
 }
 #about{
   background: url('http://nicenicejpg.com/1500/1200') no-repeat;
   background-size: cover;
+  padding-top: 20px;
+}
+#work{
+
+}
+.about{
+ background: #fff;
 }
 .about-text>p{
   color: #353535;
@@ -143,4 +158,7 @@ p{
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+#google_map{
+  height: 500px;
 }

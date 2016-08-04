@@ -17,11 +17,7 @@ def login_required(f):
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
-@app.route('/scroll')
-def scroll():
-    return render_template('index.html')
+    return render_template('main.html')
 
 @app.route('/admin')
 @login_required
