@@ -80,11 +80,12 @@ p{
 .navbar-toggle{
   padding-top:22px;
 }
-.dropdown>a.login{
+.login-button>a.login{
   padding-left: 40px;
   padding-right: 40px;
   background: #c7c7c7;
   color: #353535;
+  cursor:pointer;
 }
 .navbar-right{
   margin-right: -20px;
@@ -110,8 +111,6 @@ p{
   background: #3f8e7f;
   border: 1px solid #3f8e7f;
   color: #fff;
-  /*font-size: 20px;*/
-  /*background: none;*/
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
   -o-transition: background-color .5s ease-out;
@@ -124,8 +123,6 @@ p{
   background: #c7c7c7;
   border: 1px solid #c7c7c7;
   color: #353535;
-  /*font-size: 20px;*/
-  /*background: none;*/
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
   -o-transition: background-color .5s ease-out;
@@ -155,7 +152,7 @@ p{
 #home{
   background: url('/static/images/background4.jpg') no-repeat;
   background-size: cover;
-  height: 450px;
+  width:100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
