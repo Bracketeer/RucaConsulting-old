@@ -105,12 +105,26 @@ p{
 }
 .btn-ruca{
   margin-top: 20px;
-  padding: 20px 50px;
-  border-radius: 50px;
+  padding: 15px 30px;
+  border-radius: 0px;
   background: #3f8e7f;
   border: 1px solid #3f8e7f;
   color: #fff;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  /*background: none;*/
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+.btn-ruca-light{
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 0px;
+  background: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  color: #353535;
+  /*font-size: 20px;*/
   /*background: none;*/
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
@@ -231,4 +245,25 @@ p{
 .overlay>p{
   position: relative;
   text-align: center;
+}
+/*Modal*/
+.modal-content{
+  background-color: #353535;
+  border-radius: 0;
+}
+
+#password, #username{
+  border-radius: 0;
+  background-color: #c7c7c7;
+  border: 0;
+  padding: 25px 10px;
+  color: #353535;
+  font-size: 20px;
+}
+.control-label{
+  font-size: 16px;
+}
+.fa-key{
+  color: #fff;
+  font-size: 50px;
 }
