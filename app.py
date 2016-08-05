@@ -21,6 +21,10 @@ def login_required(f):
 def home():
     return render_template('main.html')
 
+@app.route('/googlee2edb9889f3cbfd9.html')
+def googleVerify():
+    return render_template('googlee2edb9889f3cbfd9.html')
+
 @app.route('/admin')
 @login_required
 def admin():
