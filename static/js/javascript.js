@@ -9,6 +9,20 @@ $("document").ready(function($){
 //   }
 // })
 $('#navbar').scrollspy()
+$("#work-carousel").owlCarousel();
+// Custom Navigation Events
+$(".next").click(function(){
+  owl.trigger('owl.next');
+})
+$(".prev").click(function(){
+  owl.trigger('owl.prev');
+})
+$(".play").click(function(){
+  owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+})
+$(".stop").click(function(){
+  owl.trigger('owl.stop');
+})
 
 // Google Maps Code
 
@@ -23,7 +37,25 @@ var options = {
   navigationControl: true,
   mapTypeControl: false,
   scrollwheel: false,
-  disableDoubleClickZoom: true
+  disableDoubleClickZoom: true,
+  styles: [
+    {
+    "stylers": [
+      { "visibility": "simplified" },
+      { "hue": "#3f8e7f" },
+      { "saturation": -80},
+      { "lightness": -30}
+    ]
+  },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [
+                { hue: '#3f8e7f' },
+                { saturation: 50 }
+              ]
+            }
+          ]
 };
 
 // initialize the map object
