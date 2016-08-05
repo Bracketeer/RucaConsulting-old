@@ -32,7 +32,6 @@ reportlab==3.3.0
 requests==2.9.1
 roman==2.0.0
 rsa==3.2.3
-screen-resolution-extra==0.0.0
 sessioninstaller==0.0.0
 sip==4.18
 six==1.10.0
