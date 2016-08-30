@@ -13,6 +13,9 @@
   <body data-spy="scroll" data-target=".navbar" data-offset="150">
     <!-- Navigation Template -->
     {% include "navigation.html" %}
+    <!-- Carousel Modal Template -->
+    {% include "modal.html" %}
+    {% include "login.html" %}
     <!-- Child Template -->
     {% block content %}{% endblock %}
       <!-- Errors -->
@@ -25,7 +28,8 @@
       {% endfor %}
   <script type="text/javascript" src="/static/js/jquery-2.1.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1HuNpkftHcS8puzpuWngjoMZ-tDQaiM&callback=initMap"
+  type="text/javascript"></script>
   <script type="text/javascript" src="/static/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="https://use.fontawesome.com/3958139b47.js"></script>
   <script type="text/javascript" src="/static/js/javascript.js"></script>
