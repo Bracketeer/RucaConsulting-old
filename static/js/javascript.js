@@ -1,5 +1,9 @@
 $("document").ready(function($){
 
+  var sticky = new Waypoint.Sticky({
+    element: $('#work')[0]
+  })
+
 //   var waypoint = new Waypoint({
 //   element: document.getElementById('function-offset'),
 //   handler: function(direction) {
@@ -42,7 +46,7 @@ var options = {
     {
     "stylers": [
       { "visibility": "simplified" },
-      { "hue": "#3f8e7f" },
+      { "hue": "#9050a0" },
       { "saturation": -80},
       { "lightness": -30}
     ]
@@ -51,7 +55,7 @@ var options = {
               featureType: 'road',
               elementType: 'geometry',
               stylers: [
-                { hue: '#3f8e7f' },
+                { hue: '#9050a0' },
                 { saturation: 50 }
               ]
             }
