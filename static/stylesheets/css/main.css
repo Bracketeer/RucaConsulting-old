@@ -1,0 +1,22 @@
+.navbar-ruca {
+  background: rgba(45, 45, 45, 0.3);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  margin: 10px 5px 10px 5px; }
+  .navbar-ruca a {
+    color: #fff;
+    font-size: 18px;
+    font-family: serif; }
+
+#home {
+  background-image: image("../../images/background5.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #home h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: italiana, open-sans; }
+  #home img {
+    margin-bottom: 100px; }
+
+/*# sourceMappingURL=main.css.map */

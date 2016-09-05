@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription" content="{{ description }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/sass/main.css" media="screen" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link href="https://fonts.googleapis.com/css?family=Italiana|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/static/stylesheets/css/main.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/static/stylesheets/vendor/jquery.fullpage.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/static/stylesheets/vendor/owl.carousel.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/static/stylesheets/vendor/owl.transitions.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/static/stylesheets/css/main.css" media="screen" charset="utf-8">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="150">
-    <!-- Navigation Template -->
-    {% include "navigation.html" %}
-    <!-- Carousel Modal Template -->
-    {% include "modal.html" %}
-    {% include "login.html" %}
     <!-- Child Template -->
     {% block content %}{% endblock %}
       <!-- Errors -->
@@ -28,13 +26,13 @@
       {% endfor %}
   <script type="text/javascript" src="/static/js/jquery-2.1.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1HuNpkftHcS8puzpuWngjoMZ-tDQaiM&callback=initMap"
-  type="text/javascript"></script>
-  <script type="text/javascript" src="/static/js/owl.carousel.min.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1HuNpkftHcS8puzpuWngjoMZ-tDQaiM&callback=initMap"
+  type="text/javascript"></script> -->
   <script type="text/javascript" src="https://use.fontawesome.com/3958139b47.js"></script>
-  <script type="text/javascript" src="/static/js/javascript.js"></script>
-
+  <script type="text/javascript" src="/static/js/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="/static/js/app.js"></script>
+  <!-- <script type="text/javascript" src="/static/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="/static/js/jquery.waypoints.min.js"></script>
-  <script type="text/javascript" src="/static/js/sticky.min.js"></script>
+  <script type="text/javascript" src="/static/js/sticky.min.js"></script> -->
   </body>
 </html>

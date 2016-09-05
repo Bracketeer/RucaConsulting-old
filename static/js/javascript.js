@@ -1,17 +1,5 @@
 $("document").ready(function($){
 
-  var sticky = new Waypoint.Sticky({
-    element: $('#work')[0]
-  })
-
-//   var waypoint = new Waypoint({
-//   element: document.getElementById('function-offset'),
-//   handler: function(direction) {
-//   },
-//   offset: function() {
-//     return -this.element.clientHeight
-//   }
-// })
 $('#navbar').scrollspy()
 $("#work-carousel").owlCarousel();
 // Custom Navigation Events

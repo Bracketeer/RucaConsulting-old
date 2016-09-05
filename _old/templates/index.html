@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ruca Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="{{ description }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/sass/main.css" media="screen" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
+    <div id="fullPage">
+    <!-- Navigation Template -->
+    {% include "navigation.html" %}
+    <!-- Carousel Modal Template -->
+    {% include "modal.html" %}
+    {% include "login.html" %}
+    <!-- Child Template -->
+    {% block content %}{% endblock %}
+      <!-- Errors -->
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+      <!-- Messages -->
+      {% for message in get_flashed_messages() %}
+        {{message}}
+      {% endfor %}
+    </div>
+  <script type="text/javascript" src="/static/js/jquery-2.1.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf1HuNpkftHcS8puzpuWngjoMZ-tDQaiM&callback=initMap"
+  type="text/javascript"></script>
+  <script type="text/javascript" src="/static/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://use.fontawesome.com/3958139b47.js"></script>
+  <script type="text/javascript" src="/static/js/javascript.js"></script>
+  <script src="/static/js/jquery.fullPage.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="/static/js/sticky.min.js"></script>
+  </body>
+</html>

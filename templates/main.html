@@ -1,126 +1,13 @@
 {% extends "index.html" %}
 {% block content %}
-<section id="home">
-
-      <img class="main-logo" src="/static/images/Ruca_logo.png" />
-      <p><a class="btn btn-ruca">Get a Quote</a></p>
-
-</section>
-<section id="services">
-  <div class="header">
-          <h1>Our Services<h1>
+{% include 'navigation.html'%}
+<div class="row">
+<div class="container-fluid" id="fullpage">
+    {% include 'home.html'%}
+    {% include 'services.html'%}
+    {% include 'work.html'%}
+    {% include 'about.html'%}
+    {% include 'contact.html'%}
   </div>
-  <div class="container">
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="service-image">
-          <i class="fa fa-cogs fa-5" aria-hidden="true"></i>
-          </div>
-          <div class="service-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.
-            </p>
-          </div>
-
-        </div>
-        <div class="col-sm-4">
-          <div class="service-image">
-          <i class="fa fa-truck fa-5" aria-hidden="true"></i>
-          </div>
-          <div class="service-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="service-image">
-          <i class="fa fa-wrench fa-5" aria-hidden="true"></i>
-          </div>
-          <div class="service-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.
-            </p>
-          </div>
-        </div>
-
-      </div>
-  </div>
-</section>
-<section id="work">
-  <div class="header">
-    <h1>Our Work</h1>
-  </div>
-  <div class="container-fluid">
-    <div class="work-carousel" id="work-carousel">
-      <div class="image-wrap">
-          <a data-toggle="modal" data-target="#workmodal1">
-            <img src="/static/images/work1.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</span></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="/static/images/work2.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="/static/images/work3.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="/static/images/work1.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="/static/images/work2.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="/static/images/work3.jpg" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-      <div class="image-wrap">
-          <a href="#">
-            <img src="http://fillmurray.com/400/400" alt="" />
-          </a>
-          <div class="overlay"><p>Joe Schmoe</p></div>
-      </div>
-    </div>
-    <div class="row">
-      <div id="google_map"></div>
-    </div>
-  </div>
-</section>
-<section id="about">
-  <div class="header">
-          <h1>About Us<h1>
-  </div>
-  <div class="container-fluid about">
-          <div class="row">
-          <div class="col-sm-4 col-sm-offset-5 about-image">
-            <img src="http://fillmurray.com/300/300" alt="" />
-          </div>
-          <div class="col-sm-8 col-sm-offset-2 about-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.
-            </p>
-            <p>
-              Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat at erat quis dignissim. Aliquam commodo pharetra suscipit. Praesent mollis nulla hendrerit, dictum justo a, vulputate erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-      </div>
-  </div>
-</section>
+</div>
 {% endblock %}
