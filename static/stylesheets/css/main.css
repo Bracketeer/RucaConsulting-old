@@ -17,6 +17,9 @@
 body {
   background: #9050a0; }
 
+.white {
+  background: #fff; }
+
 .fp-section {
   width: 100% !important;
   opacity: 0;
@@ -84,12 +87,12 @@ body {
 .fa-bars {
   color: #fff; }
 
-#home {
+.home {
   padding-top: 3em;
-  background-image: url("../../images/Hero.png");
+  background-image: url("../../images/Hero.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  #home h1 {
+  .home h1 {
     color: #fff;
     font-size: 50px;
     font-family: italiana, open-sans;
@@ -97,7 +100,7 @@ body {
     -webkit-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
     -moz-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
     -ms-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5)); }
-  #home img {
+  .home img {
     margin-bottom: 150px;
     max-width: 400px;
     width: 100%;
@@ -105,7 +108,7 @@ body {
     -webkit-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
     -moz-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
     -ms-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5)); }
-  #home button {
+  .home button {
     background: rgba(45, 45, 45, 0.5);
     border: solid 1px #fff;
     border-radius: 8px;
@@ -118,32 +121,32 @@ body {
     font-weight: bold; }
 
 @media screen and (max-width: 350px) {
-  #home button {
+  .home button {
     margin-top: 10px; } }
 @media screen and (max-width: 480px) {
-  #home img {
+  .home img {
     margin-bottom: 0; }
-  #home h1 {
+  .home h1 {
     font-size: 30px; }
-  #home button {
+  .home button {
     font-size: 25px; } }
 @media screen and (max-height: 900px) {
-  #home img {
+  .home img {
     margin-bottom: 0; }
-  #home h1 {
+  .home h1 {
     font-size: 30px; }
-  #home button {
+  .home button {
     font-size: 25px; } }
-#services {
-  background-image: url("../../images/placing_tiles.png");
+.services {
+  background-image: url("../../images/placing_tiles.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  #services i {
+  .services i {
     color: #9050a0; }
-  #services h1, #services h2 {
+  .services h1, .services h2 {
     font-family: italiana, open-sans;
     font-weight: bold; }
-  #services h1 {
+  .services h1 {
     font-size: 80px; }
 
 .white-container {
@@ -155,5 +158,8 @@ body {
   -ms-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5)); }
   .white-container p {
     font-size: 18px; }
+
+.testimonials {
+  background: #fff; }
 
 /*# sourceMappingURL=main.css.map */
