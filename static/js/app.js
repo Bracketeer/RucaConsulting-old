@@ -3,11 +3,11 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
+        anchors:['Home', 'Services', 'Work', 'About', 'Contact'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
+        navigationTooltips: ['Home', 'Services', 'Work', 'About', 'Contact'],
+        showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
@@ -44,9 +44,8 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        // sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,

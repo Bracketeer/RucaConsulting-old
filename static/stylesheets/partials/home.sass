@@ -1,10 +1,42 @@
 #home
-  background-image: image('../../images/background5.png')
+  padding-top: 3em
+  background-image: url('../../images/Hero.png')
   background-repeat: no-repeat
   background-size: cover
+
   h1
     color: #fff
     font-size: 50px
     font-family: italiana, open-sans
+    +shadow
+
   img
-    margin-bottom: 100px
+    margin-bottom: 150px
+    max-width: 400px
+    width: 100%
+    +shadow
+
+  button
+    background: rgba(45,45,45,.5)
+    border: solid 1px #fff
+    border-radius: 8px
+    color: #fff
+    padding: 10px 20px
+    font-size: 30px
+    margin-top: 50px
+    margin-bottom: 75px
+    font-family: italiana, open-sans
+    font-weight: bold
+
+@media screen and (max-width: 350px)
+  #home
+    button
+      margin-top: 10px
+@media screen and (max-width: 480px)
+  #home
+    img
+      margin-bottom: 0
+    h1
+      font-size: 30px
+    button
+      font-size: 25px
