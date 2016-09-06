@@ -14,8 +14,16 @@ body
   // z-index: 0
   // transform: scale(.5)
   filter: blur(10px)
-  transition: all .7s ease-in-out
+  transition: all .5s ease-in-out
 
+.ruca-logo
+  animation: logo .7s ease-out
+.navbar-ruca
+  animation: logo 1s ease-out
+.main-text
+  animation: header-text-and-button .7s ease-out
+.main-cta
+  animation: header-text-and-button 1s ease-out
 
 .fp-section.active
   // visibility: visible
@@ -25,11 +33,32 @@ body
   filter: blur(0px)
   .white-container
     animation: promise-box .8s
+    animation-direction: alternate
 
 @keyframes promise-box
   from
     transform: scale(.1)
+    transform: translateX(300px)
+    opacity: 1
+  to
+    transform: scale(1)
+    transform: translateX(0px)
+    opacity: 1
+@keyframes logo
+  from
+    transform: scale(.1)
+    transform: translateY(-300px)
     opacity: 0
   to
     transform: scale(1)
+    transform: translateY(0px)
+    opacity: 1
+@keyframes header-text-and-button
+  from
+    transform: scale(.1)
+    transform: translateY(300px)
+    opacity: 0
+  to
+    transform: scale(1)
+    transform: translateY(0px)
     opacity: 1

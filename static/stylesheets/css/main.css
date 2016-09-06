@@ -1,3 +1,19 @@
+#home button {
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  outline: none; }
+  #home button:hover {
+    background: rgba(144, 80, 160, 0.5); }
+  #home button:active {
+    background: rgba(144, 80, 160, 0.8); }
+
+.nav a:hover, .navbar a:hover {
+  background: rgba(144, 80, 160, 0.5); }
+.nav a:active, .navbar a:active {
+  background: rgba(144, 80, 160, 0.5); }
+
 body {
   background: #9050a0; }
 
@@ -5,27 +21,60 @@ body {
   width: 100% !important;
   opacity: 0;
   filter: blur(10px);
-  transition: all 0.7s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
+
+.ruca-logo {
+  animation: logo 0.7s ease-out; }
+
+.navbar-ruca {
+  animation: logo 1s ease-out; }
+
+.main-text {
+  animation: header-text-and-button 0.7s ease-out; }
+
+.main-cta {
+  animation: header-text-and-button 1s ease-out; }
 
 .fp-section.active {
   opacity: 1;
   filter: blur(0px); }
   .fp-section.active .white-container {
-    animation: promise-box 0.8s; }
+    animation: promise-box 0.8s;
+    animation-direction: alternate; }
 
 @keyframes promise-box {
   from {
     transform: scale(0.1);
+    transform: translateX(300px);
+    opacity: 1; }
+  to {
+    transform: scale(1);
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes logo {
+  from {
+    transform: scale(0.1);
+    transform: translateY(-300px);
     opacity: 0; }
   to {
     transform: scale(1);
+    transform: translateY(0px);
     opacity: 1; } }
-.navbar-ruca {
+@keyframes header-text-and-button {
+  from {
+    transform: scale(0.1);
+    transform: translateY(300px);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1; } }
+.navbar-ruca, .nav, .navbar-nav {
   background: rgba(45, 45, 45, 0.5);
   border-radius: 8px;
   border: 1px solid #fff;
   margin: 10px 5px 10px 5px; }
-  .navbar-ruca a {
+  .navbar-ruca a, .nav a, .navbar-nav a {
     color: #fff;
     font-size: 18px;
     font-family: italiana, open-sans;
