@@ -1,18 +1,18 @@
 .navbar-ruca, .nav, .navbar-nav
-  li
-    background: rgba(45,45,45,.5)
-    border-radius: 8px
-    border: 1px solid #fff
-    margin: 10px 5px 10px 5px
-    &:hover
-      background: $brand
-    a
-      color: #fff
-      font-size: 18px
-      font-family: italiana, open-sans
-      font-weight: bold
-      cursor: pointer
-      &:hover
-        background: $brand !important
+	background: rgba(45,45,45,.5)
+	border-radius: 8px
+	border: 1px solid #fff
+	margin: 10px 5px 10px 5px
+	overflow: hidden
+	li
+		a
+			+transition
+			color: #fff
+			font-size: 18px
+			font-family: italiana, open-sans
+			font-weight: bold
+			cursor: pointer
+			&:hover
+				background: transparentize($brand, .5)
 .fa-bars
-  color: #fff
+	color: #fff
