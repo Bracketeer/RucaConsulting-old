@@ -127,6 +127,13 @@ body {
     font-size: 30px; }
   #home button {
     font-size: 25px; } }
+@media screen and (max-height: 900px) {
+  #home img {
+    margin-bottom: 0; }
+  #home h1 {
+    font-size: 30px; }
+  #home button {
+    font-size: 25px; } }
 #services {
   background-image: url("../../images/placing_tiles.png");
   background-repeat: no-repeat;
