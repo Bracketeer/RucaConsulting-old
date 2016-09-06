@@ -163,6 +163,8 @@ body {
     cursor: pointer; }
     .navbar-ruca li a:hover, .nav li a:hover, .navbar-nav li a:hover {
       background: rgba(144, 80, 160, 0.5); }
+    .navbar-ruca li a:focus, .nav li a:focus, .navbar-nav li a:focus {
+      background: rgba(144, 80, 160, 0.8); }
 
 .fa-bars {
   color: #fff; }

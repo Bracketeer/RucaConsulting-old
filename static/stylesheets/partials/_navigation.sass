@@ -5,6 +5,7 @@
 	margin: 10px 5px 10px 5px
 	overflow: hidden
 	li
+
 		a
 			+transition
 			color: #fff
@@ -14,5 +15,9 @@
 			cursor: pointer
 			&:hover
 				background: transparentize($brand, .5)
+			&:focus
+				background: transparentize($brand, .2)
+			// .active
+			// 	background: transparentize($brand, .2)
 .fa-bars
 	color: #fff
