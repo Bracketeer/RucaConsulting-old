@@ -1,18 +1,16 @@
-#home button {
+.home button {
   -webkit-transition: background-color 0.3s ease-out;
   -moz-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
   outline: none; }
-  #home button:hover {
+  .home button:hover {
     background: rgba(144, 80, 160, 0.5); }
-  #home button:active {
+  .home button:active {
     background: rgba(144, 80, 160, 0.8); }
 
-.nav a:hover, .navbar a:hover {
-  background: rgba(144, 80, 160, 0.5); }
-.nav a:active, .navbar a:active {
-  background: rgba(144, 80, 160, 0.5); }
+.navbar-ruca > li > a:hover {
+  background: #9050a0; }
 
 body {
   background: #9050a0; }
@@ -72,21 +70,6 @@ body {
     transform: scale(1);
     transform: translateY(0px);
     opacity: 1; } }
-.navbar-ruca, .nav, .navbar-nav {
-  background: rgba(45, 45, 45, 0.5);
-  border-radius: 8px;
-  border: 1px solid #fff;
-  margin: 10px 5px 10px 5px; }
-  .navbar-ruca a, .nav a, .navbar-nav a {
-    color: #fff;
-    font-size: 18px;
-    font-family: italiana, open-sans;
-    font-weight: bold;
-    cursor: pointer; }
-
-.fa-bars {
-  color: #fff; }
-
 .home {
   padding-top: 3em;
   background-image: url("../../images/Hero.jpg");
@@ -161,5 +144,24 @@ body {
 
 .testimonials {
   background: #fff; }
+
+.navbar-ruca li, .nav li, .navbar-nav li {
+  background: rgba(45, 45, 45, 0.5);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  margin: 10px 5px 10px 5px; }
+  .navbar-ruca li:hover, .nav li:hover, .navbar-nav li:hover {
+    background: #9050a0; }
+  .navbar-ruca li a, .nav li a, .navbar-nav li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: italiana, open-sans;
+    font-weight: bold;
+    cursor: pointer; }
+    .navbar-ruca li a:hover, .nav li a:hover, .navbar-nav li a:hover {
+      background: #9050a0 !important; }
+
+.fa-bars {
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
