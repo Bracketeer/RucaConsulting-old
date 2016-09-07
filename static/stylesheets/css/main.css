@@ -41,7 +41,10 @@ body {
   filter: blur(0px); }
   .fp-section.active .white-container {
     animation: promise-box 0.8s;
-    animation-direction: alternate; }
+    transform: translateX(300px);
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards; }
 
 @keyframes promise-box {
   from {

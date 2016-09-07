@@ -2,66 +2,70 @@
 //   width: 100%!important
 //   transform: none!important
 body
-  background: $brand
+	background: $brand
 
 .white
-  background: #fff
+	background: #fff
 
 .fp-section
-  width: 100%!important
-  // position: absolute
-  // left: 0
-  // top: 0
-  // visibility: hidden
-  opacity: 0
-  // z-index: 0
-  // transform: scale(.5)
-  filter: blur(10px)
-  transition: all .5s ease-in-out
+	width: 100%!important
+	// position: absolute
+	// left: 0
+	// top: 0
+	// visibility: hidden
+	opacity: 0
+	// z-index: 0
+	// transform: scale(.5)
+	filter: blur(10px)
+	transition: all .5s ease-in-out
 
 .ruca-logo
-  animation: logo .7s ease-out
+	animation: logo .7s ease-out
 .navbar-ruca
-  animation: logo 1s ease-out
+	animation: logo 1s ease-out
 .main-text
-  animation: header-text-and-button .7s ease-out
+	animation: header-text-and-button .7s ease-out
 .main-cta
-  animation: header-text-and-button 1s ease-out
+	animation: header-text-and-button 1s ease-out
 
 .fp-section.active
-  // visibility: visible
-  opacity: 1
-  // z-index: 1
-  // transform: scale(1)
-  filter: blur(0px)
-  .white-container
-    animation: promise-box .8s
-    animation-direction: alternate
+	// visibility: visible
+	opacity: 1
+	// z-index: 1
+	// transform: scale(1)
+	filter: blur(0px)
+	.white-container
+		animation: promise-box .8s
+		transform: translateX(300px)
+		// animation-direction: alternate
+		animation-delay: .5s
+		animation-iteration-count: 1
+		-webkit-animation-fill-mode: forwards
 
 @keyframes promise-box
-  from
-    transform: scale(.1)
-    transform: translateX(300px)
-    opacity: 1
-  to
-    transform: scale(1)
-    transform: translateX(0px)
-    opacity: 1
+	from
+		transform: scale(.1)
+		transform: translateX(300px)
+		opacity: 1
+	to
+		transform: scale(1)
+		transform: translateX(0px)
+		opacity: 1
 @keyframes logo
-  from
-    transform: scale(.1)
-    transform: translateY(-300px)
-    opacity: 0
-  to
-    transform: scale(1)
-    transform: translateY(0px)
-    opacity: 1
+	from
+		transform: scale(.1)
+		transform: translateY(-300px)
+		opacity: 0
+	to
+		transform: scale(1)
+		transform: translateY(0px)
+		opacity: 1
 @keyframes header-text-and-button
-  from
-    transform: scale(.1)
-    transform: translateY(300px)
-    opacity: 0
-  to
-    transform: scale(1)
-    transform: translateY(0px)
-    opacity: 1
+	from
+		transform: scale(.1)
+		transform: translateY(300px)
+		opacity: 0
+	to
+		transform: scale(1)
+		transform: translateY(0px)
+		opacity: 1
