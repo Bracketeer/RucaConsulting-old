@@ -2,9 +2,10 @@ $(document).ready(function() {
 
   $('#fullpage').fullpage({
       //Navigation
-      menu: '#menu',
+			menu: true,
+      menu: '#ruca-menu',
       lockAnchors: false,
-      anchors:['home', 'services', 'testimonials', 'work', 'about', 'contact'],
+      anchors: ['home', 'services', 'testimonials', 'work', 'about', 'contact'],
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['home', 'services', 'testimonials', 'work', 'about', 'contact'],
@@ -25,7 +26,7 @@ $(document).ready(function() {
       loopTop: false,
       loopHorizontal: true,
       continuousVertical: false,
-      continuousHorizontal: false,
+      continuousHorizontal: true,
       scrollHorizontally: true,
       interlockedSlides: false,
       resetSliders: false,
@@ -39,7 +40,7 @@ $(document).ready(function() {
 
       //Accessibility
       keyboardScrolling: true,
-      animateAnchor: true,
+      animateAnchor: false,
       recordHistory: true,
 
       //Design
