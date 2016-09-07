@@ -40,16 +40,16 @@ body {
   opacity: 1;
   filter: blur(0px); }
   .fp-section.active .white-container {
-    animation: promise-box 0.8s;
-    transform: translateX(300px);
-    animation-delay: 0.5s;
+    animation: promise-box 0.5s;
+    transform: translateX(800px);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards; }
 
 @keyframes promise-box {
   from {
     transform: scale(0.1);
-    transform: translateX(300px);
+    transform: translateX(800px);
     opacity: 1; }
   to {
     transform: scale(1);
@@ -58,7 +58,7 @@ body {
 @keyframes logo {
   from {
     transform: scale(0.1);
-    transform: translateY(-300px);
+    transform: translateY(-800px);
     opacity: 0; }
   to {
     transform: scale(1);
@@ -67,7 +67,7 @@ body {
 @keyframes header-text-and-button {
   from {
     transform: scale(0.1);
-    transform: translateY(300px);
+    transform: translateY(800px);
     opacity: 0; }
   to {
     transform: scale(1);
