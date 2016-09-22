@@ -41,7 +41,7 @@ body {
   filter: blur(0px); }
   .fp-section.active .white-container {
     animation: promise-box 0.5s;
-    transform: translateX(800px);
+    transform: translateY(800px);
     animation-delay: 0.3s;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards; }
@@ -49,11 +49,11 @@ body {
 @keyframes promise-box {
   from {
     transform: scale(0.1);
-    transform: translateX(800px);
+    transform: translateY(800px);
     opacity: 1; }
   to {
     transform: scale(1);
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1; } }
 @keyframes logo {
   from {
@@ -124,7 +124,7 @@ body {
   .home button {
     font-size: 25px; } }
 .services {
-  background-image: url("../../images/placing_tiles.jpg");
+  background-image: url("../../images/sunset_roof.png");
   background-repeat: no-repeat;
   background-size: cover; }
   .services i {
@@ -143,7 +143,7 @@ body {
   -moz-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
   -ms-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5)); }
   .white-container p {
-    font-size: 18px; }
+    font-size: 16px; }
 
 @media screen and (max-width: 480px) {
   .services h1 {
@@ -204,5 +204,33 @@ body {
 
 .fa-bars {
   color: #fff; }
+
+.promise {
+  background-image: url("../../images/placing_tiles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .promise i {
+    color: #9050a0; }
+  .promise h1, .promise h2 {
+    font-family: italiana, open-sans;
+    font-weight: bold; }
+  .promise h1 {
+    font-size: 8rem; }
+
+.white-container {
+  padding: 40px;
+  background: #fff;
+  filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
+  -moz-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5));
+  -ms-filter: drop-shadow(5px 5px 5px rgba(45, 45, 45, 0.5)); }
+  .white-container p {
+    font-size: 16px; }
+
+@media screen and (max-width: 480px) {
+  .services h1 {
+    font-size: 4rem; }
+  .services h2 {
+    font-size: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */

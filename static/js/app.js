@@ -5,10 +5,10 @@ $(document).ready(function() {
 			menu: true,
       menu: '#ruca-menu',
       lockAnchors: false,
-      anchors: ['home', 'services', 'testimonials', 'work', 'about', 'contact'],
+      anchors: ['home', 'promise', 'services', 'testimonials', 'work', 'about', 'contact'],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['home', 'services', 'testimonials', 'work', 'about', 'contact'],
+      navigationTooltips: ['home', 'promise', 'services', 'testimonials', 'work', 'about', 'contact'],
       showActiveTooltip: true,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
@@ -37,6 +37,7 @@ $(document).ready(function() {
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,
       bigSectionsDestination: null,
+			scrollOverflow: true,
 
       //Accessibility
       keyboardScrolling: true,
