@@ -13,16 +13,15 @@
   background: #9050a0; }
 
 body {
-  background: #9050a0; }
+  background: #000; }
 
 .white {
   background: #fff; }
 
 .fp-section {
   width: 100% !important;
-  opacity: 0;
-  filter: blur(10px);
-  transition: all 0.5s ease-in-out; }
+  opacity: 1;
+  transition: all 0.3s ease-in-out; }
 
 .ruca-logo {
   animation: logo 0.7s ease-out; }
@@ -50,7 +49,7 @@ body {
   from {
     transform: scale(0.1);
     transform: translateY(800px);
-    opacity: 1; }
+    opacity: 0; }
   to {
     transform: scale(1);
     transform: translateY(0px);
@@ -235,5 +234,70 @@ body {
 .image-wrap img {
   height: 400px;
   width: 400px; }
+
+.work-header h1 {
+  font-family: italiana, open-sans; }
+
+.about {
+  background: #fff; }
+
+.about-text > p {
+  color: #353535;
+  padding-bottom: 50px; }
+
+.about-image > img {
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+/*Work */
+#google_map {
+  margin-top: 20px;
+  height: 430px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.owl-item {
+  overlow: hidden;
+  position: relative; }
+
+.image-wrap {
+  text-align: center;
+  position: relative; }
+  .image-wrap a {
+    color: white;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s; }
+  .image-wrap:hover a {
+    color: white;
+    text-decoration: none; }
+  .image-wrap img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+    transition: 0.3;
+    overflow: hidden; }
+  .image-wrap:hover img {
+    opacity: 0.1;
+    transition: 0.4s; }
+
+.overlay {
+  background: #9050a0;
+  max-width: 400px;
+  max-height: 400px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s; }
+  .overlay > p {
+    position: relative;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

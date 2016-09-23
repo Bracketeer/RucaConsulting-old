@@ -26,7 +26,7 @@ owl.owlCarousel({
       //Scrolling
       css3: true,
       scrollingSpeed: 700,
-      autoScrolling: true,
+      autoScrolling: false,
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
@@ -40,7 +40,7 @@ owl.owlCarousel({
       scrollHorizontally: true,
       interlockedSlides: false,
       resetSliders: false,
-      fadingEffect: false,
+      fadingEffect: true,
       normalScrollElements: '#element1, .element2',
       scrollOverflow: false,
       scrollOverflowOptions: null,
