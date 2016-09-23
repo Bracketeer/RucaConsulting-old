@@ -1,9 +1,21 @@
 $(document).ready(function() {
 
-var owl = $("#work-carousel");
+	$('.navbar-collapse ul li a').click(function(){
+            $('.navbar-toggle:visible').click();
+    });
 
-owl.owlCarousel({
+var owlWork = $("#work-carousel");
+var owlTestimonial = $("#testimonial-carousel")
+
+owlWork.owlCarousel({
       items : 5, //10 items above 1000px browser width
+      itemsDesktop : [1000,3], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,2], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+owlTestimonial.owlCarousel({
+      items : 3, //10 items above 1000px browser width
       itemsDesktop : [1000,3], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,2], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0
@@ -26,7 +38,7 @@ owl.owlCarousel({
       //Scrolling
       css3: true,
       scrollingSpeed: 700,
-      autoScrolling: false,
+      autoScrolling: true,
       fitToSection: true,
       fitToSectionDelay: 1000,
       scrollBar: false,
@@ -42,9 +54,9 @@ owl.owlCarousel({
       resetSliders: false,
       fadingEffect: true,
       normalScrollElements: '#element1, .element2',
-      scrollOverflow: false,
+      scrollOverflow: true,
       scrollOverflowOptions: null,
-      touchSensitivity: 15,
+      touchSensitivity: 30,
       normalScrollElementTouchThreshold: 5,
       bigSectionsDestination: null,
 			scrollOverflow: true,
