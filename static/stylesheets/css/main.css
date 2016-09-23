@@ -232,5 +232,8 @@ body {
     font-size: 4rem; }
   .services h2 {
     font-size: 3rem; } }
+.image-wrap img {
+  height: 400px;
+  width: 400px; }
 
 /*# sourceMappingURL=main.css.map */
