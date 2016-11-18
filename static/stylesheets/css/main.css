@@ -24,16 +24,23 @@ body {
   transition: all 0.3s ease-in-out; }
 
 .ruca-logo {
-  animation: logo 0.7s ease-out; }
+  animation: logo 0.7s ease-out forwards;
+	animation-delay: .5s;
+	opacity: 0;}
 
 .navbar-ruca {
-  animation: logo 1s ease-out; }
+  animation: logo 1s ease-out forwards;
+	animation-delay: .5s;
+	opacity: 0;}
 
 .main-text {
-  animation: header-text-and-button 0.7s ease-out; }
+  animation: header-text-and-button 0.7s ease-out forwards;
+	animation-delay: .5s;
+	opacity: 0;}
 
 .main-cta {
-  animation: header-text-and-button 1s ease-out; }
+  animation: header-text-and-button 1s ease-out forwards;
+	animation-delay: .5s;}
 
 .fp-section.active {
   opacity: 1;
